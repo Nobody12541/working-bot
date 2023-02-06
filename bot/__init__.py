@@ -457,6 +457,6 @@ try:
         raise KeyError
 except KeyError:
     UPTOBOX_TOKEN = None
-updater = tg.Updater(token=BOT_TOKEN)
+updater = tgUpdater(token=BOT_TOKEN)
 bot = updater.bot
 dispatcher = updater.dispatcher
